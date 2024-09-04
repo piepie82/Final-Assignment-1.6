@@ -1,0 +1,7 @@
+flask
+gunicorn
+google-generativeai
+textblob
+transformers
+torch
+tf-keras

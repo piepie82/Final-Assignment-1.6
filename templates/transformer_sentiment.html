@@ -1,0 +1,13 @@
+<h2>Transformer Sentiment Analysis</h2>
+{% if sentiment %}
+    <p>Label: {{ sentiment.label }}</p>
+    <p>Score: {{ sentiment.score }}</p>
+    {% if sentiment.message %}
+        <p>Error: {{ sentiment.message }}</p>
+    {% endif %}
+{% else %}
+    <p>No sentiment data available.</p>
+{% endif %}
+<form action="/" method="post">
+    <input type="submit" value="Main">
+</form>
